@@ -14,7 +14,8 @@ basic form operations and understanding the space time complexity in different p
 
 ##Steps to load the .so file on R Console using Terminal : 
 
-` dyn.load('sortingLibrary.so') `
+` dyn.load('sortingLibrary.so') ` 
+
  ` .C("main") ` 
 
 This will execute the library file.
