@@ -21,7 +21,7 @@ basic form operations and understanding the space time complexity in different p
 This will execute the library file.
 
 **_Please have a look at Tutorial-1.png, Tutorial-1-Result.png
- in case of any doubt _**
+ in case of any doubt_**
  
 ### Execution result may vary according to the system configuration.
 The screenshots of the execution results attached holds system configuration as :
