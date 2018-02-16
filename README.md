@@ -25,9 +25,9 @@ This will execute the library file.
  
 ### Execution result may vary according to the system configuration.
 The screenshots of the execution results attached holds system configuration as :
-*Processor : Intel Core i5
-*RAM : 8 GB
-*System Type : 64 bit Operating System
+* Processor : Intel Core i5
+* RAM : 8 GB
+* System Type : 64 bit Operating System
 
 In case of any issue email me at : isharmashubham@outlook.com
 
