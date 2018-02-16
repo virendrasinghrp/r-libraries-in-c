@@ -7,7 +7,6 @@
 #include "selectionSort.h"
 #include "mergeSort.h"
 #include "SortingWithCSVFileManually.h"
-#include "SortingRandomCSVFile.h"
 #define bool int 
 
 int main()
@@ -16,8 +15,8 @@ int main()
     int n,i,choice,n1=10;
     char s[500];
     clock_t start,end;
-   float cpu_time_used;
-
+   double cpu_time_used;
+	int count = 0;
    int run = 1;
 	while( run )
 	{
@@ -25,8 +24,7 @@ int main()
 		printf("\n Press 2 To Perform Selection Sort ");
 		printf("\n Press 3 To Perform Merge Sort ");
 		printf("\n Press 4 To Perform Sorting Through A Manual CSV File ");
-		printf("\n Press 5 To Perform Sorting Through A Random CSV File ");		
-		printf("\n Press 6 For Exit ");
+		printf("\n Press 5 For Exit ");
 		printf("\n Enter Your Choice : ");
 		scanf("%d",&choice);
 		switch( choice )
@@ -45,12 +43,13 @@ int main()
 
    				printf("\n After quick Sort Elements Are : \n"); 
     				quickSort(dataQuickSort, 0, n - 1 );
-        			end = clock(); 
+        			//end = clock();
+					  start = clock() - start;		
   				 displayQuickSort(dataQuickSort,n);
 
-    				cpu_time_used = ((double)(end-start))/CLOCKS_PER_SEC*1000;
+    				cpu_time_used = ((double)start)/CLOCKS_PER_SEC;
 
-				printf("\n Time taken : is %f ",cpu_time_used);
+				printf("\n Time taken : is %f seconds",cpu_time_used);
 
 				
 				break;
@@ -67,13 +66,13 @@ int main()
  				 displaySelectionSort(dataSelectionSort,n);
   				start = clock();
 				 selectionsort(dataSelectionSort,n);
- 				end = clock();
+ 				start = clock() - start;
  				printf("\n After selection sort Elements Are :\n");
  				
 				displaySelectionSort(dataSelectionSort,n);
-				cpu_time_used = ((double)(end-start))/CLOCKS_PER_SEC*1000;
+				cpu_time_used = ((double)start)/CLOCKS_PER_SEC;
 
-				printf("\n Time taken : is %f ",cpu_time_used);
+				printf("\n Time taken : is %f seconds",cpu_time_used);
 
 				break;
 			case 3:
@@ -90,12 +89,12 @@ int main()
   				 displayMergeSort(dataMergeSort,n);
     				start = clock();
    				  MergeSort(dataMergeSort,0,n-1);
-				end = clock();
+				start = clock() - start;
     				printf("\n After Merge Sort Elements Are \n");
   				 displayMergeSort(dataMergeSort,n);
-				cpu_time_used = ((double)(end-start))/CLOCKS_PER_SEC*1000;
+				cpu_time_used = ((double)start)/CLOCKS_PER_SEC;
 
-				printf("\n Time taken : is %f ",cpu_time_used);
+				printf("\n Time taken : is %f seconds",cpu_time_used);
 
 				
 				break;
@@ -103,13 +102,13 @@ int main()
 			case 4:
 				start = clock();
 				sortingThroughFile();
-				end = clock(); 				
-				cpu_time_used = ((double)(end-start))/CLOCKS_PER_SEC*1000;
+				start = clock() - start; 				
+				cpu_time_used = ((double)start)/CLOCKS_PER_SEC;
 
-				printf("\n Time taken : is %f ",cpu_time_used);
+				printf("\n Time taken : is %f seconds",cpu_time_used);
 				break;
 
-			case 5:
+		/*	case 5:
 	 			
 				printf("\n Enter the size of Array \n");
   				 scanf("%d",&n);
@@ -124,7 +123,7 @@ int main()
 
 				printf("\n Time taken : is %f ",cpu_time_used);
 				break;
-			case 6:
+			*/case 5:
 				run = 0;
 				printf("\n Exit From Program ");
 				break;
