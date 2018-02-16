@@ -19,5 +19,15 @@ basic form operations and understanding the space time complexity in different p
  ` .C("main") ` 
 
 This will execute the library file.
+
+**_ Please have a look at Tutorial-1.png, Tutorial-1-Result.png
+ in case of any doubt _**
+ 
+### Execution result may vary according to the system configuration.
+The screenshots of the execution results attached holds system configuration as :
+	Processor : Intel Core i5
+	RAM : 8 GB
+	System Type : 64 bit Operating System
+
 In case of any issue email me at : isharmashubham@outlook.com
 
