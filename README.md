@@ -7,3 +7,8 @@ The objective is to :-
 1) Develop  R libraries in C
 2) Visualization of data points
 3) Comparative study of space time complexity on different platforms
+
+--> How to Build .so file from .c file using gcc on Linux ( Ubuntu ) Terminal
+
+gcc -shared -o sortingLibrary.so -fPIC sortingLibrary.c
+
